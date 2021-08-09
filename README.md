@@ -6,6 +6,12 @@
 
 # Next.js Prisma
 
+- Home
+![image](https://user-images.githubusercontent.com/40055484/128654877-d831021a-d6a4-4046-9734-b635b60a62d8.png)
+
+- Login
+![image](https://user-images.githubusercontent.com/40055484/128654884-211ad309-d66f-4a13-8f78-fdb609e066ec.png)
+
 ## Features
 - Google認証(Next-Auth)
 - 退会機能
