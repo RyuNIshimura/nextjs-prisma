@@ -6,19 +6,18 @@
 
 # Next.js Prisma
 
-- Home
-![image](https://user-images.githubusercontent.com/40055484/128654877-d831021a-d6a4-4046-9734-b635b60a62d8.png)
-
-- Login
-![image](https://user-images.githubusercontent.com/40055484/128654884-211ad309-d66f-4a13-8f78-fdb609e066ec.png)
-
 ## Features
-- Google認証(Next-Auth)
-- 退会機能
 - UI: TailwindCSS
+- Google認証(Next-Auth)
+- 退会機能: Prisma Client
+- グローバルステート: Recoil
 
 ## Setup
-Google認証を試す場合は、`.env.example`をコピーして、設定してください
+NextAuthのGoogle認証を試す場合は、`.env.example`をコピーして、設定してください。
+[OAuth 同意画面 – APIとサービス](https://console.cloud.google.com/apis/credentials/consent)から`GOOGLE_CLIENT_ID`と`GOOGLE_CLIENT_SECRET`を発行してください。
+
+- 承認済みJavaScriptの生成元: `http://localhost:3000`
+- 承認済みのリダイレクトURL: `http://localhost:3000/api/auth/callback/google`
 
 ```sh
 cp .env.example .env.local
@@ -27,6 +26,9 @@ cp .env.example .env.local
 ```sh
 docker-compose up
 docker-compose build
+docker run --rm app yarn install
+npx prisma generate
+npx prisma migrate dev
 ```
 
 ```sh

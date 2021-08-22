@@ -17,12 +17,12 @@ export default function UserMenu() {
       {({ open }) => (
         <>
           <div>
-            <Menu.Button className="bg-gray-100 rounded-full flex items-center focus:outline-none">
+            <Menu.Button className="flex items-center bg-gray-100 rounded-full focus:outline-none">
               <span className="sr-only">User options</span>
               <img
-                className="inline-block h-10 w-10 rounded-full"
-                src={session.user.image}
-                alt={session.user.name}
+                className="inline-block w-10 h-10 rounded-full"
+                src={session?.user?.image || ''}
+                alt={session?.user?.name || '/icon.png'}
               />
             </Menu.Button>
           </div>
@@ -39,7 +39,7 @@ export default function UserMenu() {
           >
             <Menu.Items
               static
-              className="origin-top-right absolute right-0 mt-2 w-56 rounded-sm shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-sm shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <div className="py-1">
                 <Menu.Item>

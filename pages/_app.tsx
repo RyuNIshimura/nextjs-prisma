@@ -1,4 +1,4 @@
-import '@/styles/globals.scss'
+import '@/styles/globals.css'
 import '@/styles/tailwind-utils.css'
 import '@/styles/tailwind.css'
 

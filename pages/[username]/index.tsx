@@ -11,7 +11,7 @@ export default function Index({ user }: any) {
     
   useEffect(() => {
     if (!user) router.push('/')
-  }, [user])
+  }, [router, user])
 
   const _deleteAccount = async () => {
     if (!user.id) return
@@ -45,13 +45,13 @@ export default function Index({ user }: any) {
         <meta name="twitter:image" content={ `${APP_DOMAIN}/ogp.png` }/>
         <meta name="twitter:card" content="summary"/>
       </Head>
-      <div className="bg-white my-10">
+      <div className="my-10 bg-white">
         { user && <main>
           <p>{user.name}</p>
           <p>{user.email}</p>
           <button
             onClick={_deleteAccount}
-            className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+            className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50"
           >
             退会する
           </button>

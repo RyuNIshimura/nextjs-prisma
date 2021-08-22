@@ -3,5 +3,4 @@
 
 yarn fixpack && \
 yarn lint && \
-yarn stylelint && \
-yarn next lint
+yarn tsc
