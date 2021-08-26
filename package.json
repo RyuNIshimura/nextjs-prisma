@@ -22,7 +22,7 @@
     "eslint-config-next": "^11.1.0",
     "eslint-config-prettier": "^8.3.0",
     "fixpack": "^4.0.0",
-    "husky": "^7.0.1",
+    "husky": "^7.0.2",
     "next-auth": "^3.29.0",
     "postcss": "^8.3.6",
     "prisma": "2.30.0",
