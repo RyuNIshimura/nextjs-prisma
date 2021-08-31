@@ -2,7 +2,7 @@
   "name": "next-prisma",
   "version": "1.0.0",
   "dependencies": {
-    "@headlessui/react": "^1.4.0",
+    "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "@prisma/client": "^2.30.0",
     "axios": "^0.21.1",
