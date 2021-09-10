@@ -1,16 +1,16 @@
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import { useSession, signOut } from 'next-auth/client'
-import { classNames } from '@/lib/style-utils'
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { useSession, signOut } from "next-auth/client";
+import { classNames } from "@/lib/style-utils";
 
 export default function UserMenu() {
   // eslint-disable-next-line no-unused-vars
-  const [session, loading] = useSession()
+  const [session, loading] = useSession();
 
   const handleSignout = (e: any) => {
-    e.preventDefault()
-    signOut()
-  }
+    e.preventDefault();
+    signOut();
+  };
 
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -21,8 +21,8 @@ export default function UserMenu() {
               <span className="sr-only">User options</span>
               <img
                 className="inline-block w-10 h-10 rounded-full"
-                src={session?.user?.image || ''}
-                alt={session?.user?.name || '/icon.png'}
+                src={session?.user?.image || ""}
+                alt={session?.user?.name || "/icon.png"}
               />
             </Menu.Button>
           </div>
@@ -47,8 +47,8 @@ export default function UserMenu() {
                     <div
                       onClick={handleSignout}
                       className={classNames(
-                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                        'cursor-pointer block px-4 py-2 text-sm'
+                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                        "cursor-pointer block px-4 py-2 text-sm"
                       )}
                     >
                       ログアウト
@@ -61,5 +61,5 @@ export default function UserMenu() {
         </>
       )}
     </Menu>
-  )
+  );
 }

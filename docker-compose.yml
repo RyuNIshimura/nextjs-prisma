@@ -12,25 +12,25 @@ services:
       - '3306:3306'
     volumes:
       - mysqldata:/var/lib/mysql
-    networks:
-      - default
+    # networks:
+    #   - default
 
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./:/usr/src/app
-    ports:
-      - "3000:3000"
-      - "5555:5555"
-    networks:
-      - default
-    depends_on:
-      - mysql
+  # app:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - ./:/usr/src/app
+  #   ports:
+  #     - "3000:3000"
+  #     - "5555:5555"
+  #   networks:
+  #     - default
+  #   depends_on:
+  #     - mysql
 
-networks:
-  default:
+# networks:
+#   default:
 
 volumes:
   mysqldata:
