@@ -19,7 +19,7 @@
     "@next-auth/prisma-adapter": "^0.5.4",
     "@tailwindcss/jit": "^0.1.18",
     "@types/gtag.js": "^0.0.7",
-    "@types/node": "^16.9.4",
+    "@types/node": "^16.9.6",
     "@types/react": "^17.0.22",
     "autoprefixer": "^10.3.4",
     "eslint": "^7.32.0",
