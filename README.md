@@ -4,19 +4,22 @@
 <img src="https://img.shields.io/badge/LICENSE-MIT-7D83FD" />
 </p>
 
-# Fullstack App with Next.js Prisma ⚡️
+# ⚡️ Fullstack App with Next.js and Prisma
 
 Next.js と Prisma を使用して、フルスタックアプリケーションを構築します。
 
-## 機能 ☕️
+## 構成
+
+- フロントエンド: Next.js(Vercel)
+- バックエンド:  Next.js API
+- データベース: PostgreSQL(Heroku)
+- 認証: NextAuth
+
+## 機能
 
 - 認証(NextAuth)
   - Google認証
-  - GitHub認証(準備中)
   - 退会機能
-- 決済機能(準備中)
-- メール送信機能(準備中)
-- ストレージサーバ連携(準備中)
 
 ## 開発環境 
 
@@ -28,24 +31,21 @@ Next.js と Prisma を使用して、フルスタックアプリケーション�
 cp .env.example .env.local
 ```
 
-### MySQL(Docker)
+### PostgreSQL(Docker)
 
 ```bash
-docker-compose up
-docker-compose build
+docker-compose up # 👈 Dockerイメージのビルド
+docker-compose build # 👈 Dockerの起動
 ```
 
 ### Next.js(ローカル)
 
 ```bash
-yarn install
-npx prisma generate
-
-npx prisma migrate dev
-# or
-npx prisma migrate reset
-
-yarn dev
+yarn install # 👈 依存関係のインストール
+npx prisma generate # 👈 Prismaの設定の読み込み
+npx prisma migrate dev # 👈 Migration
+npx prisma migrate reset  # ⚠️ DB Reset
+yarn dev # 👈 Next.jsアプリケーションの起動
 ```
 
 ## 環境変数
@@ -62,7 +62,7 @@ Google認証の設定は、[OAuth 同意画面 – APIとサービス](https://c
 - 承認済みJavaScriptの生成元: `http://localhost:3000`
 - 承認済みのリダイレクトURL: `http://localhost:3000/api/auth/callback/google`
 
-## さらに
+## 🔥 More...
 
 このプロジェクトでは、Vercelの[Serverless Functions](https://vercel.com/docs/serverless-functions/introduction)を使用していますが、
 APIサーバとして、機能な壁にぶつかった場合は、ExpressやNest.jsへの切り替えを検討してください。

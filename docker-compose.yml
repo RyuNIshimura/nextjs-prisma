@@ -1,36 +1,20 @@
 version: '3'
 services:
-  mysql:
-    image: mysql:5.7
-    environment:
-      - TZ=Asia/Tokyo
-      - MYSQL_DATABASE=db
-      - MYSQL_USER=user
-      - MYSQL_PASSWORD=password
-      - MYSQL_ROOT_PASSWORD=password
-    ports:
-      - '3306:3306'
+  db:
+    image: postgres
     volumes:
-      - mysqldata:/var/lib/mysql
-    # networks:
-    #   - default
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    networks:
+      - default
 
-  # app:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   volumes:
-  #     - ./:/usr/src/app
-  #   ports:
-  #     - "3000:3000"
-  #     - "5555:5555"
-  #   networks:
-  #     - default
-  #   depends_on:
-  #     - mysql
-
-# networks:
-#   default:
+networks:
+  default:
 
 volumes:
-  mysqldata:
+  db-data:
