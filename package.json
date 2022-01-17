@@ -30,7 +30,7 @@
     "husky": "^7.0.4",
     "next-auth": "^4.1.1",
     "postcss": "^8.4.4",
-    "prettier": "^2.5.0",
+    "prettier": "^2.5.1",
     "prisma": "3.6.0",
     "sass": "^1.44.0",
     "tailwindcss": "^2.2.19",
