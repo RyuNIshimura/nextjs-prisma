@@ -34,7 +34,7 @@
     "prisma": "3.10.0",
     "sass": "^1.49.9",
     "tailwindcss": "^2.2.19",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "private": true,
   "scripts": {
