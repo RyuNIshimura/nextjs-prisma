@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "fixpack": "^4.0.0",
     "husky": "^7.0.4",
-    "next-auth": "^4.8.0",
+    "next-auth": "^4.9.0",
     "postcss": "^8.4.13",
     "prettier": "^2.5.1",
     "prisma": "3.13.0",
