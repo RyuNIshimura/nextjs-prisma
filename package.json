@@ -31,7 +31,7 @@
     "next-auth": "^4.8.0",
     "postcss": "^8.4.13",
     "prettier": "^2.5.1",
-    "prisma": "3.13.0",
+    "prisma": "4.2.0",
     "sass": "^1.49.9",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.6.2"
