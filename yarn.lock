@@ -2861,10 +2861,10 @@ react-markdown@^8.0.2:
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
-react-spinners@^0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.13.1.tgz#c485ff9020d6840c0d6d3639d74e4fb4348bbc1e"
-  integrity sha512-iWeSx0kwJoHu5bgEdGcG5q8NYklX2jraJ+WacoidH9GUx5XeFqBXCbG6W37ciy0VahioDS9N6KK9DUoZ6m6Zlg==
+react-spinners@^0.13.5:
+  version "0.13.5"
+  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.13.5.tgz#ad49ba5b64c4bc5aa8b9599f310edb18e199db04"
+  integrity sha512-je7Z3MGK1w+VHGgflGaJz2KMi723zKeSpRd52keYWlfr+//JLzwY+YiG9ESFPxyT2MG9TEvUXNlg5EN8vlAwww==
 
 react@^17.0.2:
   version "17.0.2"
