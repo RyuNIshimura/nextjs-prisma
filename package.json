@@ -29,7 +29,7 @@
     "fixpack": "^4.0.0",
     "husky": "^8.0.1",
     "next-auth": "^4.8.0",
-    "postcss": "^8.4.19",
+    "postcss": "^8.4.21",
     "prettier": "^2.7.1",
     "prisma": "4.6.1",
     "sass": "^1.56.1",
