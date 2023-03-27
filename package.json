@@ -20,7 +20,7 @@
     "@tailwindcss/jit": "^0.1.18",
     "@types/gtag.js": "^0.0.12",
     "@types/node": "^18.15.3",
-    "@types/react": "^18.0.21",
+    "@types/react": "^18.0.29",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.35.0",
     "eslint-config-next": "^13.0.4",
