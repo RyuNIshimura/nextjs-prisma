@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^2.0.16",
+    "@heroicons/react": "^2.0.17",
     "@prisma/client": "^4.12.0",
     "axios": "^1.2.6",
     "dayjs": "^1.11.7",
