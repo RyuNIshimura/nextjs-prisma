@@ -16,7 +16,7 @@
     "swr": "^1.2.2"
   },
   "devDependencies": {
-    "@next-auth/prisma-adapter": "^1.0.5",
+    "@next-auth/prisma-adapter": "^1.0.7",
     "@tailwindcss/jit": "^0.1.18",
     "@types/gtag.js": "^0.0.12",
     "@types/node": "^18.16.0",
